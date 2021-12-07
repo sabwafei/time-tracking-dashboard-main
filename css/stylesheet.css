@@ -1,6 +1,108 @@
 /* coded by SabWaFei */
+
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* global styles */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* desktop */
+  height: 100vh;
+  /* /desktop */
+}
+li {
+  list-style: none;
+}
+.outer {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.inner {
+  /* desktop */
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  /* desktop */
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.icon {
+  height: 80px;
+  width: 80px;
+}
+/* /global styles */
+
+/* utility classes */
+
+/* used to overlap */
+.outer {
+  overflow: hidden;
+  background-color: lightseagreen;
+}
+.inner {
+  position: relative;
+  padding: 1em;
+  border: solid red 1px;
+  margin-top: -30px;
+  background-color: lime;
+}
+/* /used to overlap */
+
+/* /utility classes */
+
+/* main styling */
+.container {
+  width: 75%;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(4, 1fr);
+}
+.profile {
+  background-color: blue;
+  /* desktop */
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* desktop */
+}
+.profile-pic {
+  height: 50px;
+  width: 50px;
+  border: solid white 3px;
+  border-radius: 35px;
+}
+.icon {
+  position: relative;
+  margin-top: -20px;
+}
+.icon-container {
+  margin: 0.2em;
+  display: flex;
+  justify-content: flex-end;
+}
+.two-outer {
+  overflow: hidden;
+  background-color: lightseagreen;
+}
+.two-inner {
+  /* used to overlap */
+  position: relative;
+  /* used to overlap */
+  padding: 1em;
+  border: solid red 1px;
+  margin-top: -30px;
+  background-color: lime;
+}
+
+footer {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 2em;
+  width: 90%;
+}
+/* /global styles */
