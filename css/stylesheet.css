@@ -50,6 +50,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2em;
   background-color: var(--clr-very-dark-blue);
 
   /* desktop */
@@ -132,21 +133,10 @@ button {
 .container {
   width: 90%;
   margin-top: 2em;
-  /* width: 75%;
-  display: grid;
-  gap: 1.5em;
-  grid-template-columns: repeat(4, 1fr); */
 }
-
-/* .profile {
-  /* desktop */
-/* grid-row-start: 1;
-  grid-row-end: 3;
- } */
-
 .profile-pic {
-  height: 75px;
-  width: 75px;
+  height: 55px;
+  width: 55px;
   border: solid white 3px;
   border-radius: 35px;
 }
@@ -230,4 +220,49 @@ footer {
 }
 .seven-outer {
   background-color: var(--clr-soft-orange-self-care);
+}
+@media only screen and (min-width: 420px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    margin-top: 2em;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 800px;
+  }
+  .profile {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .one-outer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .sub-menu {
+    padding-left: 10%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8em;
+  }
 }
