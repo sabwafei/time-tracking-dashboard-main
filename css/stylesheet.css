@@ -59,18 +59,6 @@ body {
 li {
   list-style: none;
 }
-.outer {
-  border-radius: 15px;
-}
-.inner {
-  border-radius: 15px;
-  /* desktop */
-  /* border-top-right-radius: 15px;
-  border-top-left-radius: 15px; */
-  /* desktop */
-  /* border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px; */
-}
 .icon {
   height: 80px;
   width: 80px;
@@ -91,6 +79,10 @@ button {
   opacity: 0.7;
 }
 
+.card {
+  margin-top: 1em;
+}
+/* utility classes */
 /* meatball menu */
 .meatball-menu {
   cursor: pointer;
@@ -106,10 +98,6 @@ button {
   background: #fff;
   opacity: 0.7;
 }
-.card {
-  margin-top: 1em;
-}
-/* utility classes */
 /* used to overlap */
 .outer {
   overflow: hidden;
@@ -122,6 +110,25 @@ button {
 }
 
 /* main styling */
+.outer {
+  border-radius: 15px;
+}
+.inner {
+  border-radius: 15px;
+  /* desktop */
+  /* border-top-right-radius: 15px;
+  border-top-left-radius: 15px; */
+  /* desktop */
+  /* border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px; */
+}
+/* show only daily visible by default */
+.weekly-current,
+.weekly-previous,
+.monthly-current,
+.monthly-previous {
+  display: none;
+}
 .container {
   width: 90%;
   margin-top: 2em;
@@ -131,12 +138,12 @@ button {
   grid-template-columns: repeat(4, 1fr); */
 }
 
-.profile {
+/* .profile {
   /* desktop */
-  /* grid-row-start: 1;
-  grid-row-end: 3; */
-  /* desktop */
-}
+/* grid-row-start: 1;
+  grid-row-end: 3;
+ } */
+
 .profile-pic {
   height: 75px;
   width: 75px;
@@ -187,7 +194,17 @@ button {
   padding: 1em;
   margin-top: -30px;
 }
-
+.inner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.inner-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 footer {
   color: white;
   text-align: center;
@@ -195,4 +212,22 @@ footer {
   margin-top: 2em;
   margin-bottom: 2em;
   width: 90%;
+}
+.two-outer {
+  background-color: var(--clr-red-work);
+}
+.three-outer {
+  background-color: var(--clr-blue-play);
+}
+.four-outer {
+  background-color: var(--clr-light-red-study);
+}
+.five-outer {
+  background-color: var(--clr-lime-green-exercise);
+}
+.six-outer {
+  background-color: var(--clr-violet-social);
+}
+.seven-outer {
+  background-color: var(--clr-soft-orange-self-care);
 }
