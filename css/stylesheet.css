@@ -196,6 +196,9 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.inner-bottom > * {
+  padding-bottom: 0.2em;
+}
 footer {
   color: white;
   text-align: center;
@@ -260,6 +263,7 @@ footer {
     align-items: flex-start;
   }
   .sub-menu {
+    padding-top: 1em;
     padding-left: 10%;
     flex-direction: column;
     justify-content: flex-start;
